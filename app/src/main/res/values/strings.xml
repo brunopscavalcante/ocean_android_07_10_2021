@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Ocean_Android_Introducao_07_10_2021</string>
+    <string name="enviar">Enviar</string>
+    <string name="reset">Reset</string>
+    <string name="digite_o_seu_nome">Digite o seu nome</string>
+    <string name="o_resultado_aparecer_aqui">O resultado aparecerá aqui</string>
 </resources>
