@@ -1,11 +1,13 @@
 package com.oceanbrasil.ocean_android_introducao_07_10_2021
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -15,15 +17,23 @@ class MainActivity : AppCompatActivity() {
         val btReset = findViewById<Button>(R.id.btReset)
         val editTextTextPersonName = findViewById<TextView>(R.id.editTextTextPersonName)
         val tvResultado = findViewById<TextView>(R.id.tvResultado)
+        val btGoNext = findViewById<Button>(R.id.btGoNext)
+
+        val oldValue_editTextTextPersonName = editTextTextPersonName.text.toString()
+        val oldValue_tvResultado = tvResultado.text.toString()
 
         btEnviar.setOnClickListener {
-            val personName = editTextTextPersonName.text
-            tvResultado.text = personName
+            tvResultado.text = editTextTextPersonName.text
         }
 
         btReset.setOnClickListener {
-            editTextTextPersonName.text = resources.getString(R.string.digite_o_seu_nome)
-            tvResultado.text = resources.getString(R.string.o_resultado_aparecer_aqui)
+            editTextTextPersonName.text = oldValue_editTextTextPersonName
+            tvResultado.text = oldValue_tvResultado
+        }
+
+        btGoNext.setOnClickListener {
+            val segundaTelaIntent = Intent(this, SecondActivity::class.java)
+            startActivity(segundaTelaIntent)
         }
 
         /*

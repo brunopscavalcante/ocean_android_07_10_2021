@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Ocean_Android_Introducao_07_10_2021</string>
-    <string name="enviar">Enviar</string>
+    <string name="enviar">Send</string>
     <string name="reset">Reset</string>
-    <string name="digite_o_seu_nome">Digite o seu nome</string>
-    <string name="o_resultado_aparecer_aqui">O resultado aparecerá aqui</string>
+    <string name="digite_o_seu_nome">Input your name...</string>
+    <string name="o_resultado_aparecer_aqui">Result is shown here</string>
+    <string name="txt_segunda_tela">Segunda Tela</string>
+    <string name="bt_voltar_value">Voltar</string>
+    <string name="lbl_next">Próxima</string>
 </resources>

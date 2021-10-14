@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ocean_Android_Introducao_07_10_2021</string>
+    <string name="enviar">Enviar</string>
+    <string name="reset">Limpar</string>
+    <string name="digite_o_seu_nome">Digite o seu nome...</string>
+    <string name="o_resultado_aparecer_aqui">O resultado aparecerá aqui</string>
+    <string name="txt_segunda_tela">Segunda Tela</string>
+    <string name="lbl_next">Próxima</string>
+</resources>
